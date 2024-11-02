@@ -1,0 +1,143 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ background: #26282c;
+}
+
+#container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ width: 300px;
+ height: 400px;
+ border-radius: 15px;
+ padding: 7px;
+ background-color: #26282c; 
+ border-radius: 20px; 
+ box-shadow: 0px 35px 68px 0px rgba(255, 255, 255, .01), inset 0px -0px 16px 0px #151618, inset 0px 11px 28px 0px #2121;
+}
+
+h2{
+ transform: translateY(-5px);
+ text-transform: uppercase;
+ font-size: 1.5em;
+ font-weight: bold;
+ color: #babecc;
+}
+
+.cover-song-info{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ width: 60%;
+ height: auto;
+ padding: 6px;
+ margin-bottom: 4%;
+}
+
+.cover-cont img{
+ width: 135px;
+ height: 135px;
+ border-radius: 50%;
+ border: .8em #171a1d solid;
+ box-shadow: .8em .8em 1.8em #151618,
+              -.8em -.8em 1em #2121;
+}
+
+.song-info p{
+ font-size: 1em;
+ font-weight: bold;
+ color: #babecc;
+}
+
+.song-el{
+ width: 100%;
+ height: auto;
+ padding: 5px;
+ margin-bottom: 3%;
+}
+
+.song-el .time-progress{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+ color: #babecc;
+ margin-bottom: 3%;
+}
+
+.song-el .progress-cont{
+ width: 100%;
+ height: 6px;
+ margin: 0 4px;
+ border-radius: 5px;
+ box-shadow: inset 3px 3px 6px #2121,
+             inset 1px 1px 1px #1f1f1f;
+ border: 1px solid #8c8f90;
+ overflow: hidden;
+}
+
+.progress-bar{
+ width: 0%;
+ height: 6px;
+ background: #babecc;
+ transition: width .15s;
+}
+
+.volume-cont{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: row;
+ width: 100%;
+ height: auto;
+ color: #babecc;
+}
+
+.volume{
+ margin: 0 5px;
+}
+
+.navigation{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 80%;
+ height: auto;
+}
+
+.navigation .actionBtn{
+ width: 50px;
+ height: 50px;
+ border: none;
+ outline: none;
+ background: #33353b;
+ box-shadow: .8em .8em 1.8em #151618,
+              -.8em -.8em 1em #2121;
+ border-radius: 15px;
+ color: #babecc;
+}
+
+.actionBtn:active{
+ transform: scale(.8);
+}
+
+.play-song{
+ transform-origin: center;
+ animation: spin 3s linear infinite;
+}
+
+@keyframes spin{
+ 0%{transform: rotate(0deg);}
+ 100%{transform: rotate(360deg);}
+}
