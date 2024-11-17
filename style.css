@@ -22,8 +22,8 @@ body{
  border-radius: 15px;
  padding: 7px;
  background-color: #26282c; 
- border-radius: 20px; 
- box-shadow: 0px 35px 68px 0px rgba(255, 255, 255, .01), inset 0px -0px 16px 0px #151618, inset 0px 11px 28px 0px #2121;
+border-radius: 20px; 
+box-shadow: 0px 35px 68px 0px rgba(255, 255, 255, .01), inset 0px -0px 16px 0px #151618, inset 0px 11px 28px 0px #2121; 
 }
 
 h2{
@@ -50,8 +50,8 @@ h2{
  height: 135px;
  border-radius: 50%;
  border: .8em #171a1d solid;
- box-shadow: .8em .8em 1.8em #151618,
-              -.8em -.8em 1em #2121;
+/* box-shadow: .8em .8em 1.8em #151618,
+           -.8em -.8em 1em #2121;*/
 }
 
 .song-info p{
@@ -134,7 +134,7 @@ h2{
 
 .play-song{
  transform-origin: center;
- animation: spin 3s linear infinite;
+ animation: spin 10s linear infinite;
 }
 
 @keyframes spin{
